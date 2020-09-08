@@ -1,0 +1,262 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*CSS MENU*/
+ul.menu{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #6bd83c, yellowgreen,  #93b874);
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+ul.home li{
+    display: inline-block;
+    width: 210px;
+    position: relative;
+}
+ul.menu >li:last-child{
+    border-right: none;
+}
+ul.menu li a{
+    display: block;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+}
+ul.menu li a img{
+    vertical-align: middle;
+}
+ul.menu li a:hover{
+    color: brown;
+    background-color: #6bd83c;
+    border-bottom: 2px solid orangered;
+}
+.horizontal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+a >img{
+    margin: 3px;
+    width: 25px;
+}
+
+/*CSS MENU CON*/
+.content{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+.content li{
+    text-align: left;
+}
+.menu li:hover .content{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*CSS SECTION*/
+body{
+    background-image: url(../images/nen8.jpeg);
+    background-position: center;
+}
+div.left{
+    width: 18%;
+}
+div.right{
+    width: 82%;
+    margin-top: 30px;
+    margin-right: 70px;
+    background-color: rgb(212, 240, 199);
+}
+section.list{
+    display: flex;
+}
+
+/*CLASS LEFT*/
+.vertical{
+    position: fixed;
+    top: 96px;
+    left: 30px;
+    width: 15.3%;
+}
+ul.vertical >li{
+    list-style-image: url(../images/bullet1.gif) !important;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px dotted yellowgreen;
+}
+
+h4{
+    text-align: center;
+    color: rgb(148, 138, 6);
+    padding: 10px;
+    margin: auto;
+}
+.flex {
+    width: 17.5%;
+    position: fixed;
+    top: 58px;
+    left: 0;
+    margin-bottom: 0;
+    background-color: rgba(7, 243, 85, 0.685);
+    display: flex;
+}
+.flex >span{
+    border: 1px solid rgba(7, 243, 85, 0.685);
+    background-color: rgb(122, 2, 2);
+    color: white;
+    padding-top: 10px;
+    padding-left: 5px;
+    width: 10%;
+}
+
+
+/*CLASS RIGHT*/
+div.right{
+    text-align: center;
+    color: blue;
+    padding: 1%;
+}
+h1{
+    font-size: 4.5vw;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: #7beb12;
+    text-shadow: 5px 5px 3px #120364;
+}
+h2{
+    background-image:-webkit-linear-gradient(left, red 0%, orange 50%, yellow 100%);
+    width: 35%;
+    border: 1px dashed brown;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.animate__animated.animate__rubberBand {
+    --animate-duration: 2s;
+}
+:root {
+    --animate-duration: 7000ms;
+    --animate-delay: 0.5s;
+}
+h3{
+    font-size: 16px;
+    text-align: left;
+    color: black;
+    padding: 10px;
+    text-indent: 20px;
+    line-height: 20px;
+    white-space: pre-line;
+    font-weight: normal;
+}
+div.diet{
+    display: flex;
+    padding: 5px;
+}
+div.diet >figure{
+    width: 50%;
+}
+figure{
+    padding: 0;
+    margin: 0;
+}
+figure >img{
+    width: 40%;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto
+}
+figcaption{
+    text-align: center;
+    font-style: italic;
+}
+
+/*CSS BUTTON*/
+#Btn img{
+    background-color: lightgray;
+    border-radius: 80px;
+    width: 5%;
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*CSS FOOTER*/
+footer h5{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 1px;
+}
+footer h6{
+    font-size: 12px;
+}
+footer p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 17px;
+}
+li >a{
+    text-decoration: none;
+    color: black;
+}
+div.contact{
+    display: flex;
+}
+.col40{
+    width: 40%;
+}
+.col40 iframe{
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5px;
+}
+footer div.col20{
+    width: 20%;
+}
+div.contact >div >textarea{
+    width: 90%;
+    font-size: 15px;
+}
+ul.social{
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+}
+footer ul li img{
+    vertical-align: middle;
+    margin: 10px;
+    width: 50px;
+}
+input[type=submit]{
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+div.feedback{
+    text-align: center;
+}
+.footer{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background-image:radial-gradient( #3b9e82, #21e67a, #043520);
+}

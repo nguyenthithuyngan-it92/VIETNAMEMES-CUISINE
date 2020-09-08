@@ -1,0 +1,197 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*CSS MENU*/
+ul.menu{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #6bd83c, yellowgreen,  #93b874);
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+ul.menu li{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+ul.menu >li:last-child{
+    border-right: none;
+}
+ul.menu li a{
+    display: block;
+    padding: 6px;
+    color: black;
+    border-right: 1px solid yellowgreen;
+    font-size: 20px;
+}
+ul.menu li a img{
+    vertical-align: middle;
+}
+ul.menu li a:hover{
+    color: brown;
+    background-color: #6bd83c;
+    border-bottom: 2px solid orangered;
+}
+a >img{
+    margin: 5px;
+    width: 30px;
+}
+
+/*CSS MENU CON*/
+.content{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+.content li{
+    text-align: left;
+}
+.menu li:hover .content{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*CSS HEADER*/
+div.dish{
+    padding-top: 20px;
+    text-align: center;
+}
+div.dish >img{
+    width: 45%;
+    border-radius: 10px;
+    border: 2px solid yellowgreen;
+    box-shadow: 4px 4px 3px #6bd83c;
+}
+section h3{
+    font-size: 3.5vw;
+    color:#ca0347;
+    margin-bottom: 0;
+}
+section h4{
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*CSS SECTION*/
+body{
+    background-image: url(../images/nen8.jpeg);
+    background-position: center;
+    margin: 0;
+}
+.background{
+    margin-left: 80px;
+    margin-right: 80px;
+}   
+section.body{
+    margin-top: 10px;
+    background-color: rgb(212, 240, 199);
+    padding-bottom: 20px;
+}
+section p{
+    margin-top: 0;
+    white-space: pre-line;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 0 30px;
+}
+section h6{
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 10px;
+    margin: 0;
+    padding: 10px;
+}
+p.number{
+    float: right;
+    color: gray;
+}
+iframe{
+   width: 90%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/*CSS BUTTON*/
+#Btn img{
+    background-color: lightgray;
+    border-radius: 80px;
+    width: 5%;
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*CSS FOOTER*/
+footer h5{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 1px;
+}
+footer h6{
+    font-size: 12px;
+}
+footer p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 17px;
+}
+li >a{
+    text-decoration: none;
+    color: black;
+}
+div.contact{
+    display: flex;
+}
+.col40{
+    width: 40%;
+}
+footer div.col20{
+    width: 20%;
+}
+div.contact >div >textarea{
+    width: 90%;
+    font-size: 15px;
+}
+ul.social{
+    padding: 0;
+}
+footer ul li{
+    list-style-type: none;
+}
+footer ul li img{
+    vertical-align: middle;
+    margin: 10px;
+    width: 50px;
+}
+input[type=submit]{
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+div.feedback{
+    text-align: center;
+}
+.footer{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background-image:radial-gradient( #3b9e82, #21e67a, #043520);
+}

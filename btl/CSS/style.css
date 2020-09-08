@@ -1,0 +1,346 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*CSS HEADER*/
+.subject{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.subject >div{
+    width: 50%;
+}
+input[type=text]{
+    border-radius: 10px;
+    height: 50px;
+    width: 60%;
+    font-size: 18px;
+    border: 1px solid yellowgreen;
+}
+.main img{ 
+    width: 25px;  
+    vertical-align: middle;
+}
+.logo >img{
+    margin: 5px;
+    width: 150px;
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+}
+
+/*CSS MENU*/
+ul.menu{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #6bd83c, yellowgreen,  #93b874);
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+ul.menu li{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+ul.menu >li:last-child{
+    border-right: none;
+}
+ul.menu li a{
+    display: block;
+    padding: 6px;
+    color: black;
+    border-right: 1px solid yellowgreen;
+    font-size: 20px;
+}
+ul.menu li a img{
+    vertical-align: middle;
+}
+ul.menu li a:hover{
+    color: brown;
+    background-color: #6bd83c;
+    border-bottom: 2px solid orangered;
+    text-decoration: none;
+}
+a >img{
+    margin: 5px;
+    width: 30px;
+}
+
+/*CSS MENU CON*/
+.content{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    z-index: 999;
+}
+.content li{
+    text-align: left;
+}
+.menu li:hover .content{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*CSS H1*/
+@font-face{
+    font-family: font-1;
+    src: url(../fonts/font-1.ttf);
+}
+h1{
+    font-family: font-1 !important;
+    font-size: 6vw !important;
+    text-align: center;
+    margin: 10px 0 !important;
+    padding: 50px;
+    background-image: url(../images/nen3.jpg) ;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color:#f5eaca;
+    text-shadow: 5px 5px 3px #120364;
+    animation: doimau 0.8s ease-in infinite;
+}
+@keyframes doimau{
+    from{
+        color:#7beb12; 
+         
+    }
+    to{
+        color:#c1df13;
+    }
+}
+
+
+/*CSS SECTION*/
+body{
+    background-image: url(../images/nen8.jpeg);
+    background-position: center;
+    margin: 0;
+}
+.background{
+    margin-left: 80px;
+    margin-right: 80px;
+}   
+.body{
+    background-color: rgb(212, 240, 199);
+}
+.area{
+    margin: 40px 0;
+}
+div.info{
+    border: 1px solid #c1df13;
+    box-shadow: 3px 3px 3px #7beb12;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px 0;
+}
+div.info >img{
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+@keyframes doimau2 {
+    0%{ 
+        box-shadow: 3px 3px 3px brown; 
+    }
+    50%{   
+        box-shadow: 4px 4px 3px brown; 
+    }
+    100%{ 
+        box-shadow: 5px 5px 3px brown; 
+    }
+}
+h2 >a{
+    font-size: 25px !important;
+    text-decoration: none;
+    background-image:-webkit-linear-gradient(left, red 0%, orange 50%, yellow 100%);
+    width: 100%;
+    border: 1px dashed brown;
+    border-radius: 5px;
+    padding: 10px !important;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    animation: doimau2 0.8s linear infinite;
+}
+h2 >a:hover{
+    text-decoration: none;
+    color: black;
+}
+h3{
+    margin-top: 0;
+    font-size: 17px !important;
+    padding: 10px !important;
+    text-indent: 20px;
+    line-height: 20px;
+    white-space: pre-line;
+    font-weight: normal;
+}
+
+/*BOOSTRAP*/
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+/*CSS BUTTON*/
+#Btn img{
+    background-color: lightgray;
+    border-radius: 80px;
+    width: 5%;
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*CSS FOOTER*/
+footer h5{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 1px;
+}
+footer h6{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 17px;
+}
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+footer li a:hover{
+    text-decoration: none;
+    color: black;
+}
+div.contact{
+    display: flex;
+}
+.col40{
+    width: 40%;
+    margin: 5px;
+}
+.col40 iframe{
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5px;
+}
+footer div.col20{
+    width: 20%;
+}
+div.contact >div >textarea{
+    width: 90%;
+    font-size: 15px;
+}
+ul.social{
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+}
+footer ul li img{
+    vertical-align: middle;
+    margin: 10px;
+    width: 50px;
+}
+input[type=submit]{
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+div.feedback{
+    text-align: center;
+}
+.footer{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background-image:radial-gradient( #3b9e82, #21e67a, #043520);
+}
+
+@media all and (max-width: 600px){
+    div.info img{
+        width: 100%;
+    }
+
+    .body{
+        background-color: rgb(213, 200, 240);
+        width: 100%;
+    }
+    .background{
+        margin: 0;
+
+    }
+    h1{
+        width: 100% !important;
+    }
+    h2 >a{
+        display: block;
+        background-image:-webkit-linear-gradient(left, red 15%, orange 35%, yellow 50%);
+        color: rgb(247, 7, 79);
+        font-weight: bold;
+        text-shadow: 1px 2px 2px black;
+    }
+    .subject, .carousel, footer img, footer iframe{
+        display: none;
+    }
+   
+    h5, p, h6, .social > li{
+        font-size: 13px !important;
+    }
+
+}
+
+/*CSS SHARE*/
+
+ul.sharing >li{
+    background-color: rgba(252, 246, 246, 0);
+    position: fixed;
+    width: 200px;
+    left: 5px;
+    z-index: 999;
+    display: flex;
+}
+ul.sharing >li:nth-child(1){
+    top: 200px;
+}
+ul.sharing >li:nth-child(2){
+    top: 250px;
+}
+ul.sharing >li:nth-child(3){
+    top: 300px;
+}
+ul.sharing >li >a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+ul.sharing >li:hover{
+    left: 0;
+}
+h4{
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 15px !important;
+    font-size: 15px !important;
+    color: tomato;
+}
+ul.sharing >li:hover h4{
+    visibility: visible;
+    opacity: 1;
+}

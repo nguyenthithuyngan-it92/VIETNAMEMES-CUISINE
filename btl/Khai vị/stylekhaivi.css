@@ -1,0 +1,198 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*CSS MENU*/
+ul.menu{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #6bd83c, yellowgreen,  #93b874);
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+ul.menu li{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+ul.menu >li:last-child{
+    border-right: none;
+}
+ul.menu li a{
+    display: block;
+    padding: 6px;
+    color: black;
+    border-right: 1px solid yellowgreen;
+    font-size: 20px;
+}
+ul.menu li a img{
+    vertical-align: middle;
+}
+ul.menu li a:hover{
+    color: brown;
+    background-color: #6bd83c;
+    border-bottom: 2px solid orangered;
+}
+nav a >img{
+    margin: 5px;
+    width: 30px;
+}
+
+/*CSS MENU CON*/
+.content{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+.content li{
+    text-align: left;
+}
+.menu li:hover .content{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*CSS H1*/
+h1{
+    font-size: 6vw;
+    text-align: center;
+    margin: 10px 0 ;
+    padding: 40px;
+    background-image: url(../images/nen3.jpg) ;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color:#f5eaca;
+    color: #7beb12;
+    text-shadow: 5px 5px 3px #120364;
+}
+
+/*CSS SECTION*/
+body{
+    background-image: url(../images/nen8.jpeg);
+    background-position: center;
+    margin: 0;
+}
+.background{
+    margin-left: 80px;
+    margin-right: 80px;
+}   
+section.body{
+    background-color: rgb(212, 240, 199);
+}
+div.dishes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.food{
+    width: 23%;
+    border: 2px solid #6bd83c;
+    text-align: center;
+    padding: 5px;
+    margin: 1%;
+    border-radius: 5px;
+    background-image: url(../images/nen1.gif);
+    overflow: hidden;
+}
+div.food:hover{
+    box-shadow: 5px 5px 3px yellowgreen;
+}
+div.food >a >img{
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.food img:hover{
+    transform: scale(1.2);
+}
+div.info{
+    padding-top: 10px;
+}
+div.info a{
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+}
+
+/*CSS BUTTON*/
+#Btn img{
+    background-color: lightgray;
+    border-radius: 80px;
+    width: 5%;
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*CSS FOOTER*/
+footer h5{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 1px;
+}
+footer h6{
+    font-size: 12px;
+}
+footer p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 17px;
+}
+li >a{
+    text-decoration: none;
+    color: black;
+}
+div.contact{
+    display: flex;
+}
+.col40{
+    width: 40%;
+}
+.col40 iframe{
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5px;
+}
+footer div.col20{
+    width: 20%;
+}
+div.contact >div >textarea{
+    width: 90%;
+    font-size: 15px;
+}
+ul.social{
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+}
+footer ul li img{
+    vertical-align: middle;
+    margin: 10px;
+    width: 50px;
+}
+input[type=submit]{
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+div.feedback{
+    text-align: center;
+}
+.footer{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background-image:radial-gradient( #3b9e82, #21e67a, #043520);
+}

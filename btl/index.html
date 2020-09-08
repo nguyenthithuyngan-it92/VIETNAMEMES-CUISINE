@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>VIETNAMEMES CUISINE</title>
+        <link href="images/icon.png" rel="shorcut icon"/>
+        <link href="CSS/style.css" rel="stylesheet"/>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <meta name="keywords" content="amthuc, vietnam, amthucmienbac, amthucmientrung, amthucmiennam, thucdon, monngonmoingay"/>
+        <meta name="description" content="Vietnamemes Cuisine giới thiệu đến bạn ẩm thực Việt Nam cùng 3 miền của đất nước và chia sẻ với bạn thực đơn ăn uống mỗi ngày"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="JS/Javascript.js"></script>
+    </head>
+    <body onload="init()">
+        <header class="subject">
+            <div class="logo"><img  src="images/logo1.PNG" atl="LOGO" /></div> 
+            <div class="main">
+                <input type="text" placeholder="Từ khóa..." id="find"/>
+                <a href="javascript:;" onclick="Tim()">
+                    <img id="icon-search" src="images/search.png" alt="Search"/>
+                </a>
+            </div>
+        </header>
+
+        <nav id="menuId">
+            <ul class="menu">
+                <li title="Trang chủ"><a href="index.html"><img src="images/iconhome.png"/>Trang chủ </a></li>
+                <li class="submenu" title="Ẩm thực">
+                    <a href="javascript:;" id="btdd"><img src="images/iconat1.png"/>Ẩm thực <i class="fa fa-sort-down"></i></a>
+                    <ul class="menu content">
+                        <li><a href="at 3 mien/atmienbac.html" target="_blank">Ẩm thực miền Bắc</a></li>
+                        <li><a href="at 3 mien/atmientrung.html" target="_blank">Ẩm thực miền Trung</a></li>
+                        <li><a href="at 3 mien/atmiennam.html" target="_blank">Ẩm thực miền Nam</a></li>
+                    </ul>
+                </li>
+                <li class="submenu" title="Công thức">
+                    <a href="javascript:;" id="btctna"><img src="images/iconct1.png"/>Công thức <i class="fa fa-sort-down"></i></a>
+                    <ul class="menu content">
+                        <li><a href="Monchinh/Main.html" target="_blank">Món mặn</a></li>
+                        <li><a href="Món_chay/monchay.html" target="_blank">Món chay</a></li>
+                        <li><a href="Khai vị/khaivi.html" target="_blank">Khai vị</a></li>
+                    </ul>
+                </li>
+                <li class="submenu" title="Thực đơn">
+                    <a href="javascript:;" id="bttd"><img src="images/iconmenu.webp"/>Thực đơn <i class="fa fa-sort-down"></i></a>
+                    <ul class="menu content">
+                        <li><a href="../Thực đơn/lễ.html" target="_blank">Dịp lễ</a></li>
+                        <li><a href="../Thực đơn/thuong.html" target="_blank">Ngày thường</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="share">
+          <ul class="sharing">
+            <li>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/campuchia.xomfood/" target="_blank" id="fa"><img src="images/facebook.png"/></a>
+              <h4>Facebook</h4>
+            </li>
+            <li>
+              <a href="https://twitter.com/share?text=&url=https://twitter.com/fareastnash/with_replies" target="_blank" id="tw"><img src="images/twitter.png"/></a>
+              <h4>Twitter</h4>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/bami.vietnamcuisine/" target="_blank" id="ig"><img class="rounded-circle" src="images/instagram.png"/></a>
+              <h4>Instagram</h4>
+            </li>
+          </ul>
+        </section>
+        
+        
+        <section class="background">
+            <h1>ẨM THỰC VIỆT NAM</h1>
+            
+            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="1500">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                  <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/bannerAT.jpg" alt="Banner4" width="1000" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/banner-am-thuc-3.jpg" alt="Banner2" width="1000" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/banner4.jpg" alt="Banner1" width="1000" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/atdiple.jpg" alt="Banner3" width="1000" height="400">
+                  </div>
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              
+            </div>
+
+            <section class="body">
+                <section>
+                    <h3>
+                        <strong>Ẩm thực Việt Nam</strong> là cách gọi của phương thức chế biến món ăn, nguyên lý pha trộn gia vị và những thói quen ăn uống nói chung của cộng đồng người Việt trên đất nước Việt Nam. Tuy có ít nhiều sự khác biệt, ẩm thực Việt Nam vẫn bao hàm ý nghĩa khái quát nhất để chỉ tất cả những món ăn phổ biến trong cộng đồng các dân tộc thiểu số nhưng đã tương đối phổ thông trong cộng đồng người Việt.
+                        Trong văn hóa Việt Nam, ăn uống là cả một nghệ thuật, nó không chỉ nhằm đáp ứng yêu cầu cơ bản của con người mà còn có mối quan hệ mật thiết đến lối sống, truyền thống dân tộc, được thể hiện rất rõ qua những dụng cụ được dùng trong bữa ăn, cách ứng xử với mọi người trong khi ăn. Vì thế việc ăn uống còn minh chứng cho lịch sử và sự hình thành nền văn hoá của Việt Nam. Các món ăn qua từng giai đoạn nói lên được cuộc sống, con người của giai đoạn đó và của vùng đất – nơi đã sản sinh ra mỗi món ăn.
+                        <strong>Ẩm thực Việt Nam </strong> là một bức tranh đầy màu sắc, nêu bật lên bản sắc riêng của từng dân tộc, vùng miền nhưng chúng vẫn mang trong mình cốt cách, linh hồn Việt đồng nhất. Đậm đà vị dân tộc không thể xóa nhòa. 
+                    </h3>
+                </section>
+                <section class="area">
+                    <h2><a href="javascript:;" id="dd">Đặc điểm</a></h2>
+                    <div class="info">
+                        <img src="images/dacdiem.jpg" alt="Đặc điểm" />
+                        <h3>
+                            Việt Nam là một nước nông nghiệp thuộc về xứ nóng, vùng nhiệt đới gió mùa. Ngoài ra, lãnh thổ Việt Nam được chia ra ba miền rõ rệt là Bắc, Trung, Nam. Chính các đặc điểm về địa lý, văn hóa, dân tộc, khí hậu đã quy định những đặc điểm riêng của ẩm thực từng vùng – miền. Mỗi miền có một nét, khẩu vị đặc trưng. Điều đó góp phần làm ẩm thực Việt Nam phong phú, đa dạng. Nền văn minh lúa nước của Việt Nam khiến rất nhiều món ăn và nguyên liệu nấu ăn có nguồn gốc từ lúa gạo (khác với cây lúa mì hoặc lúa mạch, ngũ cốc như các vùng khác). Đây là một văn hóa ăn uống sử dụng rất nhiều loại rau (luộc, xào, làm dưa, ăn sống); nhiều loại nước canh đặc biệt là canh chua, trong khi đó số lượng các món ăn có dinh dưỡng từ động vật thường ít hơn. Những loại thịt được dùng phổ biến nhất là thịt lợn, bò, gà, ngan, vịt, các loại tôm, cá, cua, ốc, hến, trai, sò,... Những món ăn chế biến từ những loại thịt ít thông dụng hơn như thịt chó, thịt dê, thịt rùa, thịt rắn, thịt ba ba,... thường không phải là nguồn thịt chính, nhiều khi được coi là đặc sản và chỉ được sử dụng trong một dịp liên hoan nào đó với rượu uống kèm. Người Việt cũng có một số món ăn chay theo đạo Phật được chế biến từ các loại thực vật, không có nguồn thực phẩm từ động vật. Tuy nhiên, trong cộng đồng thì lại có rất ít người ăn chay trường, chỉ có các sư thầy trong các chùa hoặc người bị bệnh nặng buộc phải ăn kiêng.
+
+                        Một đặc điểm ít nhiều cũng phân biệt ẩm thực Việt Nam với một số nước khác: ẩm thực Việt Nam chú trọng ăn ngon tuy đôi khi không đặt mục tiêu hàng đầu là ăn bổ. Bởi vậy trong hệ thống ẩm thực người Việt ít có những món hết sức cầu kỳ, hầm nhừ ninh kỹ như ẩm thực Trung Hoa, cũng không thiên về bày biện có tính thẩm mỹ cao độ như ẩm thực Nhật Bản, mà thiên về phối trộn gia vị một cách tinh tế để món ăn được ngon, hoặc sử dụng những nguyên liệu dai, giòn thưởng thức rất thú vị dù không thực sự bổ béo (ví dụ như các món măng, chân cánh gà, phủ tạng động vật...).
+                        
+                        Trong thực tế, nhiều người nhận thấy, một cách cảm tính, đặc trưng ẩm thực Việt Nam toát lộ trong sự đối sánh với các nền văn hóa ẩm thực khác trên thế giới: món ăn Trung Hoa ăn bổ dưỡng, món ăn Việt ăn ngon miệng, món ăn Nhật nhìn thích mắt. Tuy nhiên, đặc điểm này ngày càng phai nhòa trong thời hội nhập. Theo phong tục chung, Tết của người Việt Nam nhất thiết phải có mâm cỗ với các món ăn đặc biệt mà ngày thường ít có. Mâm cỗ phải thịnh soạn, hấp dẫn với đầy đủ màu sắc, như: màu xanh của bánh chưng, màu đỏ tươi của xôi gấc, canh măng vàng, đĩa giò lụa hồng hồng… để tạo nên mâm cỗ cổ truyền đậm đà bản sắc Việt. Trên cái nền chung ấy, khi đi dọc miền Tổ quốc những ngày Tết, chúng ta lại bắt gặp những bức tranh ẩm thực khác nhau giữa 3 miền Bắc-Trung-Nam, với những món ăn không quá cao sang về nguyên liệu, nhưng cách chế biến khác nhau xuất phát từ văn hóa vùng miền và những yếu tố khách quan liên quan đến địa lý, khí hậu, đặc sản địa phương… 
+                        </h3>
+                </section>
+                <section class="area"> 
+                    <h2><a href="at 3 mien/atmienbac.html" target="_blank">Ẩm thực Miền Bắc</a></h2>
+                    <div class="info">
+                        <img src="images/atmb.PNG"  alt="Ẩm thực miền Bắc" />
+                        <h3>Bắc bộ là nơi tổ tiên định cư lâu đời nên từ món ăn đến cái mặc đều được sàng lọc và trở thành chuẩn mực, không dễ gì thay đổi. Người miền Bắc chọn món ăn thanh đạm, nhẹ nhàng, có vị chua nhẹ.
+                            
+                            Các món đặc trưng của người miền Bắc: phở Hà Nội, bún thang Hà Nội, bún chả Hà Nội, bánh tôm Hồ Tây, bún ốc, thịt đông, xôi cốm vòng, chả giò, miến xào cua bể...
+                            
+                            Ẩm thực miền Bắc lại in đậm cốt cách của một tầm văn hóa lâu đời. Đến với điểm hẹn từng là kinh đô của nhiều triều đại, Hà Nội được xem như tinh hoa ẩm thực miền Bắc. Món ăn miền Bắc từ cách chế biến cho đến trình bày nhìn khá đơn giản nhưng lại thể hiện sự tinh tế rất riêng.
+                            
+                            Đặc biệt, ẩm thực nơi đây đặc biệt chú trọng đến các món bánh, mứt… không phải cốt để ăn no. Mà đơn giản chỉ là mang lại cho người dùng thêm sự lựa chọn. Đồng thời, nó cũng mang nhiều tính khắc chế “âm dương” trong món ăn vốn đã được những người đi trước tính toán khá kỹ lưỡng.
+                        </h3>
+                    </div>
+                </section>
+                <section class="area"> 
+                    <h2><a href="at 3 mien/atmientrung.html" target="_blank">Ẩm thực Miền Trung</a></h2>
+                    <div class="info">
+                        <img src="images/atmt.PNG" alt="Ẩm thực miền Trung"/>
+                        <h3>Người miền Trung sử dụng cay nhiều nhưng độ ngọt lại ít hơn miền Nam. Đặc biệt là người Huế, từ món ăn dành cho người bình dân hay vua chúa đều rất nhiều món, nhiều gia vị và đặc biệt là vị chua và cay như mắm cà, mắm tôm… Các món đặc trưng của người miền Trung: bún bò Huế, bánh bèo, bánh xèo, bánh đập, chả ram, bún cá, bánh tráng thịt luộc...
+        
+                            Ẩm thực miền Trung tuy cũng nổi tiếng với các loại bánh nhưng chúng được chế biến cầu kỳ hơn khá nhiều so với ẩm thực miền Bắc. Các món ăn kèm cung có phần phong phú hơn, giúp tăng thêm hương vị của món ăn.
+                            
+                            Mảnh đất Miền Trung vốn cằn cỗi là thế và cũng không được thiên nhiên ưu ái như các vùng đất khác. Chính vì vậy, con người nơi đây luôn biết trân trọng và biến những sản vật tuyệt vời đó thành những món ăn mang những hương vị rất riêng, mà ai đã một lần thưởng thức nó sẽ không thể nào quên.</h3>
+                    </div>
+                </section>
+                <section class="area"> 
+                    <h2><a href="at 3 mien/atmiennam.html" target="_blank">Ẩm thực Miền Nam</a></h2>
+                    <div class="info">
+                        <img src="images/atmn.PNG" alt="Ẩm thực miền Nam"/>
+                        <h3> Ẩm thực miền Nam vốn được giao thoa từ rất nhiều nền ẩm thực như: Trung Quốc, Campuchia, Thái Lan…
+        
+                            Chẳng hạn, như món hủ tiếu được biến tấu từ rất nhiều cách nấu nhưng có không ít ảnh hưởng từ Trung Quốc. Còn ảnh hưởng của Campuchia, Thái Lan qua việc thêm đường, sử dụng sữa dừa (nước cốt và nước dão của dừa). Các món ăn đặc trưng sử dụng ngọt nhiều: bánh (bánh in, bánh men, bánh ít, bánh bò…), chè (chè kiếm, chè chuối), xôi, nem nướng, cháo gà, gà rô ti…
+                        
+                            Tất cả các món ăn Nam bộ đều mang phong cách của vùng sông nước phương Nam vốn rất hoang dã, hào phóng. Chỉ cần những nguyên liệu đơn sơ, có sẵn trong tự nhiên là có thể tạo nên một phong thái riêng cho các món ăn của vùng đất này. Chẳng hạn, các món thịt cá bình thường vẫn được ưa chuộng khi chuyển qua làm khô, mắm… Ngay cả những con vật như chuột, dơi, rắn hổ đất, đuông dừa cũng được chế biến thành những món ăn được nhiều người yêu thích….
+                        </h3>
+                    </div>
+                </section>
+                <section class="area">
+                    <h2 id="ctna"><a href="#">Công thức nấu ăn</a></h2>
+                    <div class="info">
+                        <img src="images/ctna.jpg" alt="Công thức nấu ăn" />
+                        <h3>
+                        Ẩm thực Việt Nam đặc trưng với sự trung dung trong cách pha trộn nguyên liệu không quá cay, quá ngọt hay quá béo. Các nguyên liệu phụ (gia vị) để chế biến món ăn Việt Nam vô cùng phong phú, bao gồm:
+                        
+                        - Nhiều loại rau thơm như húng thơm, tía tô, kinh giới, hành, thìa là, mùi tàu...
+                        - Gia vị thực vật như ớt, hạt tiêu, sả, hẹ, tỏi, gừng, chanh quả hoặc lá non...
+                        - Gia vị lên men như mẻ, mắm tôm, dấm bỗng, dấm thanh hoặc kẹo đắng, nước cốt dừa...
+                        
+                        Khi thưởng thức các món ăn, tính chất phối trộn nguyên liệu một cách tổng hợp nói trên càng trở nên rõ nét hơn: người Việt ít khi ăn món nào riêng biệt, thưởng thức từng món, mà một bữa ăn thường là sự tổng hòa các món ăn từ đầu đến cuối bữa. Một nét đặc biệt khác của ẩm thực Việt Nam mà các nước khác, nhất là nước phương Tây không có chính là gia vị nước mắm. Nước mắm được sử dụng thường xuyên trong hầu hết các món ăn của người Việt. Ngoài ra còn có các loại nước chấm như tương bần, xì dầu (làm từ đậu nành). Trong bữa ăn, thức ăn được xúc ra bát, tô, đĩa và bày trong mâm hình tròn và luôn có bát nước chấm đặt chính giữa mâm. Các thức ăn, nước chấm đều được dùng chung. Bát nước mắm dùng chung trên mâm cơm, không chỉ làm khẩu vị đậm đà hơn, món ăn có hương vị đặc trưng hơn mà còn biểu thị tính cộng đồng và mực thước trong mỗi bữa ăn của người Việt. thể hiện tính cộng đồng. Bởi lẽ bát nước chấm đặt giữa mâm nên ai cũng phải dùng do đó nó trở thành thước đo sự ý tứ và trình độ văn hóa của mỗi người.</h3>
+                </section>
+                <section class="area">
+                    <h2 id="tdmn"><a href="#">Thực đơn mỗi ngày</a></h2>
+                    <div class="info">
+                        <img src="images/thucdon.jpg" alt="Thực đơn" />
+                        <h3>Người Việt thường ăn phụ vào buổi sáng với các thức quà vặt (như các loại bánh, xôi, cháo, phở, bún). Một bữa ăn chính, đặc trưng của một gia đình Việt Nam diễn ra vào buổi trưa và buổi tối, thông thường là khi gia đình đã tụ họp đông đủ. Bữa ăn chính của người Việt dùng lương thực chính là cơm và từ ba đến năm món ăn tùy điều kiện kinh tế mỗi gia đình:
+
+                        - Một nồi cơm chung cho cả gia đình (mỗi người một bát và đôi đũa).
+                        - Một bát nhỏ đựng nước chấm (nước mắm hoặc xì dầu) cả gia đình dùng chung.
+                        - Một món mặn có chất đạm động vật và chất béo được luộc, rán hoặc kho như thịt, cá.
+                        - Một món rau luộc hoặc xào, hoặc rau thơm, rau sống, dưa muối.
+                        - Một món canh có thể đậm đà, cầu kỳ nhưng cũng không hiếm khi chỉ đơn giản là một bát nước luộc rau.
+                        
+                        Hiện nay, do đời sống được nâng cao hơn, cơ cấu bữa ăn chính của người Việt hiện cũng đã cải thiện đáng kể theo hướng gia tăng các món mặn nhiều dinh dưỡng sử dụng nguyên liệu động vật. Bên cạnh xu hướng một số vùng miền (nhất là những vùng thôn quê) có đặc tính càng nhiều món trên mâm càng tốt, nhiều gia đình thành thị lại chú trọng xu hướng tinh giản bằng cách chỉ nấu một món trọng tâm có đủ chất đạm và các loại rau bày lên mâm, ăn kèm với các loại rau dưa lặt vặt khác. Một số gia đình làm các món ăn đặc biệt nhân ngày chủ nhật rảnh rỗi, những món cầu kỳ mà ngày thường ít có thời gian để làm. Bát nước chấm "cộng đồng" nay cũng dần được nhiều gia đình, hoặc các nhà hàng cầu kỳ san riêng ra bát cho từng người để hợp vệ sinh hơn, và có nhiều loại nước chấm khác nhau tùy theo trong bữa có loại đồ ăn gì.</h3>
+                </section>
+            </section>   
+        </section>
+        
+
+        <div id="Btn">
+            <a href="javascript:;" id="topToPage"><img src="images/source.gif" alt="Button" /></a>
+        </div>
+
+        <footer>
+            <h5>Vietnamemes Cuisine giới thiệu đến bạn ẩm thực Việt Nam và thực đơn ăn uống mỗi ngày</h5>
+            <hr width="60%" color="gray" size="2"/>
+            <div class="contact">
+                <div class="col40">
+                    <p>THÔNG TIN LIÊN HỆ</p>
+                    <ul class="social">
+                        <li><i class="fa fa-phone"></i > Hotline: 0123456789</li>
+                        <li><i class="fa fa-envelope"></i> Email:<a href="mailto:vietnamemescuisine@gmail.com" target="_blank"> vietnamemescuisine@gmail.com</li>
+                        <li><i class="fa fa-map-marker"></i><a href="#" ></a> Address: 371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP.HCM </a></li>   
+                    </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9308737755287!2d106.67647591425859!3d10.816602092294234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e195f816b7%3A0xfb5c0101490d8870!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1599534407591!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col20">
+                    <p>FOLLOW US</p>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/campuchia.xomfood/" target="_blank"><img src="images/iconface.png" alt="Facebook" />Facebook</a></li>
+                        <li><a href="https://twitter.com/fareastnash/with_replies" target="_blank"><img src="images/icontwit.png" alt="Twitter" />Twitter</a></li>
+                        <li><a href="https://www.instagram.com/bami.vietnamcuisine/" target="_blank"><img src="images/iconista.png" alt="Instagram" />Instagram</a></li>
+                    </ul> 
+                </div>
+                <div class="col40 feedback">
+                    <img src="images/phản hồi.jpg" alt="Phản hồi"/>
+                    <input type="submit" value="Gửi phản hồi" data-toggle="modal" data-target="#myModal"/>
+                    <h6>Mọi phản hồi, ý kiến đóng góp của bạn cho chúng tôi đều ghi nhận và trân trọng!</h6>
+                </div>
+            </div>
+            <div class="footer" >VIETNAMEMES CUISINE &copy; 2020</div>
+        </footer>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">GỬI PHẢN HỒI</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="email">Email address: </label>
+                    <input type="email" id="email" class="form-control" placeholder="Nhập email..."/>
+                  </div>
+                  <div class="form-group">
+                    <label for="title">Tiêu đề: </label>
+                    <input type="text" id="title" class="form-control" placeholder="Nhập tiêu đề..."/>
+                  </div>
+                  <div class="form-group">
+                    <label for="feedback">Nội dung phản hồi: </label>
+                    <textarea id="feedback" class="form-control" placeholder="Nhập phản hồi của bạn..."></textarea>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox"/>Remember me
+                    </label>
+                  </div>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Phản hồi</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+    </body>
+</html>
